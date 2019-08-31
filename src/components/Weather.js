@@ -12,7 +12,7 @@ const Weather = (props) =>{
                 <h3>{props.temp}°</h3>
                 <div id='wind'><span>{props.wind} m/s</span><img src={wind} alt='wind'/></div>
                 <h5>{props.summary}</h5>
-                <span><Skycons color='#4091A7' icon={props.icon} autoplay='true'/></span>
+                <span><Skycons color='#2a5885' icon={props.icon} autoplay='true'/></span>
               </div>
             </React.Fragment>
         </React.Fragment>

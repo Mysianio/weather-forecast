@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {getWeather} from '../actions/getWeather.js';
 import Weather from './Weather.js';
 import load from '../img/load.gif';
+import moon from '../img/moon.png';
 
 const Loader = (props) =>{
 
@@ -40,7 +41,12 @@ const Loader = (props) =>{
     )
   }else{
     return(
-      <h1>h</h1>
+      <div id='wrongCoords'>
+        <h1>No data about your location :(</h1>
+        <h3>You must be on the moon</h3>
+        <h5>(Or just turn on geolocation)</h5>  
+        <img src={moon} alt='moon'/>
+      </div>
     )
   }
 }

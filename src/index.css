@@ -62,3 +62,23 @@ font-family: 'Livvic';
   align-items: center;
   height: 30px
 }
+#wrongCoords{
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#wrongCoords img{
+  animation: rotate 6s linear infinite;
+  width: 160px;
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
